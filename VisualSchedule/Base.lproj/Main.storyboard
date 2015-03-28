@@ -3,7 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Popcorn_Mountain--Standard.otf">
+            <string>PopcornMountain-Std</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -17,15 +23,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="anF-Wb-YGe">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="anF-Wb-YGe">
                                 <rect key="frame" x="0.0" y="0.0" width="653" height="689"/>
+                                <color key="backgroundColor" red="0.46666666666666667" green="0.85098039215686272" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sticky_notes.png" translatesAutoresizingMaskIntoConstraints="NO" id="N8i-ZB-WcK">
+                                <rect key="frame" x="203" y="28" width="247" height="223"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="247" id="gEX-ha-hiH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Schedule" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55Q-z6-U3L">
+                                <rect key="frame" x="237" y="144" width="178" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="178" id="dWW-Tm-ZDe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PopcornMountain-Std" family="Popcorn Mountain Std" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="55Q-z6-U3L" firstAttribute="centerX" secondItem="anF-Wb-YGe" secondAttribute="centerX" id="4Up-tu-EiP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="55Q-z6-U3L" secondAttribute="bottom" constant="410" id="4zk-BJ-M91"/>
+                            <constraint firstItem="anF-Wb-YGe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FEB-17-uB5"/>
+                            <constraint firstItem="N8i-ZB-WcK" firstAttribute="centerX" secondItem="55Q-z6-U3L" secondAttribute="centerX" id="FZz-vV-kK7"/>
+                            <constraint firstItem="N8i-ZB-WcK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Gh4-Gd-h5Y"/>
+                            <constraint firstItem="anF-Wb-YGe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Kej-sO-0v2"/>
+                            <constraint firstItem="55Q-z6-U3L" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="124" id="LQ8-L8-Cn4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="anF-Wb-YGe" secondAttribute="trailing" constant="-69" id="T9h-Ek-Gpg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="N8i-ZB-WcK" secondAttribute="bottom" constant="349" id="Xzl-Wt-d7Q"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="anF-Wb-YGe" secondAttribute="bottom" constant="-89" id="gxh-BF-B9j"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="sticky_notes.png" width="128" height="128"/>
+    </resources>
 </document>

@@ -13,6 +13,7 @@
 		D06F17F41AC738AA00EC6DF7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D06F17F31AC738AA00EC6DF7 /* Images.xcassets */; };
 		D06F17F71AC738AA00EC6DF7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D06F17F51AC738AA00EC6DF7 /* LaunchScreen.xib */; };
 		D06F18031AC738AA00EC6DF7 /* VisualScheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06F18021AC738AA00EC6DF7 /* VisualScheduleTests.swift */; };
+		D06F180E1AC73CBA00EC6DF7 /* sticky_notes.png in Resources */ = {isa = PBXBuildFile; fileRef = D06F180D1AC73CBA00EC6DF7 /* sticky_notes.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,8 @@
 		D06F17FC1AC738AA00EC6DF7 /* VisualScheduleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisualScheduleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D06F18011AC738AA00EC6DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D06F18021AC738AA00EC6DF7 /* VisualScheduleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualScheduleTests.swift; sourceTree = "<group>"; };
+		D06F180D1AC73CBA00EC6DF7 /* sticky_notes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sticky_notes.png; sourceTree = "<group>"; };
+		D06F180F1AC7407500EC6DF7 /* Popcorn_Mountain--Standard.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Popcorn_Mountain--Standard.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				D06F17E91AC738AA00EC6DF7 /* VisualSchedule */,
+				D06F180C1AC73CA900EC6DF7 /* Resources */,
 				D06F17FF1AC738AA00EC6DF7 /* VisualScheduleTests */,
 				D06F17E81AC738AA00EC6DF7 /* Products */,
 			);
@@ -110,6 +114,15 @@
 				D06F18011AC738AA00EC6DF7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D06F180C1AC73CA900EC6DF7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D06F180F1AC7407500EC6DF7 /* Popcorn_Mountain--Standard.otf */,
+				D06F180D1AC73CBA00EC6DF7 /* sticky_notes.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +207,7 @@
 			files = (
 				D06F17F21AC738AA00EC6DF7 /* Main.storyboard in Resources */,
 				D06F17F71AC738AA00EC6DF7 /* LaunchScreen.xib in Resources */,
+				D06F180E1AC73CBA00EC6DF7 /* sticky_notes.png in Resources */,
 				D06F17F41AC738AA00EC6DF7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
