@@ -8,6 +8,7 @@
     <customFonts key="customFonts">
         <mutableArray key="Popcorn_Mountain--Standard.otf">
             <string>PopcornMountain-Std</string>
+            <string>PopcornMountain-Std</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -28,35 +29,56 @@
                                 <color key="backgroundColor" red="0.46666666666666667" green="0.85098039215686272" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sticky_notes.png" translatesAutoresizingMaskIntoConstraints="NO" id="N8i-ZB-WcK">
-                                <rect key="frame" x="203" y="28" width="247" height="223"/>
+                                <rect key="frame" x="177" y="28" width="247" height="223"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="247" id="gEX-ha-hiH"/>
+                                    <constraint firstAttribute="width" constant="247" id="1ph-9a-gBC"/>
+                                    <constraint firstAttribute="height" constant="223" id="kKd-jE-TaX"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Schedule" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55Q-z6-U3L">
-                                <rect key="frame" x="237" y="144" width="178" height="46"/>
+                                <rect key="frame" x="211" y="144" width="178" height="46"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="178" id="dWW-Tm-ZDe"/>
+                                    <constraint firstAttribute="width" constant="178" id="hoU-Q1-QED"/>
+                                    <constraint firstAttribute="height" constant="46" id="j24-se-oTW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="PopcornMountain-Std" family="Popcorn Mountain Std" pointSize="24"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sii-WP-Tna">
+                                <rect key="frame" x="238" y="415" width="124" height="63"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="S4y-xf-L4P"/>
+                                    <constraint firstAttribute="height" constant="63" id="i5X-tK-iaA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PopcornMountain-Std" family="Popcorn Mountain Std" pointSize="32"/>
+                                <state key="normal" title="BEGIN">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="beginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W5i-tD-Zb8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="55Q-z6-U3L" firstAttribute="centerX" secondItem="anF-Wb-YGe" secondAttribute="centerX" id="4Up-tu-EiP"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="55Q-z6-U3L" secondAttribute="bottom" constant="410" id="4zk-BJ-M91"/>
-                            <constraint firstItem="anF-Wb-YGe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FEB-17-uB5"/>
-                            <constraint firstItem="N8i-ZB-WcK" firstAttribute="centerX" secondItem="55Q-z6-U3L" secondAttribute="centerX" id="FZz-vV-kK7"/>
-                            <constraint firstItem="N8i-ZB-WcK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Gh4-Gd-h5Y"/>
-                            <constraint firstItem="anF-Wb-YGe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Kej-sO-0v2"/>
-                            <constraint firstItem="55Q-z6-U3L" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="124" id="LQ8-L8-Cn4"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="anF-Wb-YGe" secondAttribute="trailing" constant="-69" id="T9h-Ek-Gpg"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="N8i-ZB-WcK" secondAttribute="bottom" constant="349" id="Xzl-Wt-d7Q"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="anF-Wb-YGe" secondAttribute="bottom" constant="-89" id="gxh-BF-B9j"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="anF-Wb-YGe" secondAttribute="trailing" constant="-69" id="1Jr-aj-z2W"/>
+                            <constraint firstItem="anF-Wb-YGe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="42Z-qt-LVo"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="anF-Wb-YGe" secondAttribute="bottom" constant="-89" id="7MB-14-uyF"/>
+                            <constraint firstItem="anF-Wb-YGe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9i0-0s-Zmg"/>
+                            <constraint firstItem="55Q-z6-U3L" firstAttribute="centerX" secondItem="N8i-ZB-WcK" secondAttribute="centerX" id="QnH-zv-C2S"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Sii-WP-Tna" secondAttribute="bottom" constant="122" id="SCN-S5-xSY"/>
+                            <constraint firstItem="Sii-WP-Tna" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uvr-oy-q5x"/>
+                            <constraint firstItem="N8i-ZB-WcK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="agA-bf-oVT"/>
+                            <constraint firstItem="55Q-z6-U3L" firstAttribute="centerX" secondItem="Sii-WP-Tna" secondAttribute="centerX" id="bnR-tp-q8z"/>
+                            <constraint firstItem="55Q-z6-U3L" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="124" id="myy-An-a4L"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="Sii-WP-Tna" id="PYs-6d-7qv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
