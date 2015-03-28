@@ -15,8 +15,9 @@ class ViewController: UIViewController {
         let buttonBorderColor = UIColor.blackColor()
         super.viewDidLoad()
         button.layer.cornerRadius = 8
-        button.layer.borderWidth = 2
+        button.layer.borderWidth = 1
         button.layer.borderColor = buttonBorderColor.CGColor
+        let date = NSDate()
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -27,7 +28,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func beginButton(sender: AnyObject) {
-  
+        
     }
 
 }
