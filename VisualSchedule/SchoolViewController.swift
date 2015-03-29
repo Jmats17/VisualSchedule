@@ -71,30 +71,64 @@ class SchoolViewController: UIViewController, UISearchBarDelegate, UITableViewDe
         self.tableView.reloadData()
     }
     
+    func showGoodJob() {
+        goodJob.hidden = true
+        
+
+    }
+    
     func removeItem(item : AnyObject) {
         
         switch arrayMut.indexOfObject(item) {
         case 0:
+            goodJob.hidden = false
+
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("showGoodJob"), userInfo: nil, repeats: false)
             arrayMut.removeObjectAtIndex(0)
-            UIView.animateWithDuration(1.0,delay: 0.0, options:UIViewAnimationOptions.TransitionCrossDissolve, animations: {
-                self.goodJob.hidden = false
-            }, completion: nil )
+
+
+
+            break
         case 1:
+            goodJob.hidden = false
+            
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("showGoodJob"), userInfo: nil, repeats: false)
             arrayMut.removeObjectAtIndex(1)
+            break
         case 2:
+            goodJob.hidden = false
+            
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("showGoodJob"), userInfo: nil, repeats: false)
             arrayMut.removeObjectAtIndex(2)
+            break
         case 3:
+            goodJob.hidden = false
+            
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("showGoodJob"), userInfo: nil, repeats: false)
             arrayMut.removeObjectAtIndex(3)
+            break
         case 4:
+            goodJob.hidden = false
+            
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("showGoodJob"), userInfo: nil, repeats: false)
             arrayMut.removeObjectAtIndex(4)
+            break
         case 5:
+            goodJob.hidden = false
+            
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("showGoodJob"), userInfo: nil, repeats: false)
             arrayMut.removeObjectAtIndex(5)
+            break
         case 6:
+            goodJob.hidden = false
+            
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("showGoodJob"), userInfo: nil, repeats: false)
             arrayMut.removeObjectAtIndex(6)
+            break
         default:
             arrayMut.removeObjectAtIndex(0)
+            break
         }
-        
         self.tableView.reloadData()
     }
     
@@ -107,10 +141,13 @@ class SchoolViewController: UIViewController, UISearchBarDelegate, UITableViewDe
         let cell = self.tableView.dequeueReusableCellWithIdentifier("Cell") as tableViewCell
         cell.textField.delegate = self
         cell.label.hidden = true
-        cell.textField.hidden = true
         cell.doneButton.hidden = true
         goodJob.hidden = true
-        cell.doneButton.layer.borderColor = buttonBorderColor.CGColor
+        cell.textField.layer.borderWidth = 5.0
+        cell.textField.layer.borderColor = buttonBorderColor.CGColor
+        if (cell.label.userInteractionEnabled == true ) {
+            
+        }
     }
     
     
