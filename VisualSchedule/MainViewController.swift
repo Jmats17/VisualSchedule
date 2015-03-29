@@ -25,7 +25,9 @@ class MainViewController : UIViewController, UITextFieldDelegate, UIImagePickerC
     var popOva :UIPopoverController? = nil
     
     
+    
     func printDate(date1:NSDate){
+       
         let dateFormatter = NSDateFormatter()
         let timeFormatter = NSDateFormatter()
         var theDateFormat = NSDateFormatterStyle.LongStyle
